@@ -1,0 +1,16 @@
+.header {
+  background-color: #BA122B;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+  margin-bottom: 20px;
+}
+
+.header-title {
+  font-size: 50px;
+}
+
+.fa-star {
+  margin: 10px 20px;
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Washington Memorial",
+    "image": "./images/washington-memorial.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Lincoln Memorial",
+    "image": "./images/lincoln-memorial.jpg"
+  },
+  {
+    "id": 3,
+    "name": "African American Civil War Memorial",
+    "image": "./images/african-american-civil.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Marine Corps War Memorial",
+    "image": "./images/iwo-jima.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Jefferson Memorial",
+    "image": "./images/jefferson-memorial.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Korean War Veterans Memorial",
+    "image": "./images/korean-war.jpg"
+  },
+  {
+    "id": 7,
+    "name": "United States Navy Memorial",
+    "image": "./images/us-navy.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Vietnam Veterans Memorial",
+    "image": "./images/vietnam-vets.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Vietnam Women's Memorial",
+    "image": "./images/vietnam-women.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Women in Military Service for America Memorial",
+    "image": "./images/women-in-military.jpg"
+  },
+  {
+    "id": 11,
+    "name": "National World War I Memorial",
+    "image": "./images/wwi-memorial.jpg"
+  },
+  {
+    "id": 12,
+    "name": "National World War II Memorial",
+    "image": "./images/wwii-memorial.jpg"
+  }
+]
