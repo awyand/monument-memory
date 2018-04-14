@@ -21,7 +21,7 @@
 .monument-img:hover,
 .monument-img:focus {
   box-shadow: 5px 5px 10px gray;
-  transform: scale3d(1.02, 1.02, 1);
+  transform: scale3d(1.05, 1.05, 1);
   cursor: pointer;
 }
 

@@ -22,35 +22,32 @@ class App extends Component {
   // Source: https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array
   shuffle = a => {
     for (let i = a.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * 1 (i + 1));
+      let j = Math.floor(Math.random() * (i + 1));
       [a[i], a[j]] = [a[j], a[i]];
     }
-
-    return a;
   }
 
   // Function that handles click logic
   clickTile = id => {
-    // Store this.state in a variable for ease of use
-    const s = this.state;
 
-    const matchTile = s.unclickedMonuments.find(i => i.id === id);
+    const matchTile = this.state.unclickedMonuments.find(i => i.id === id);
 
-    if (!matchTile) {
+    if (matchTile === undefined) {
       this.setState({
-        topScore: (s.currentScore > s.topScore) ? s.currentScore : s.topScore,
+        topScore: (this.state.currentScore > this.state.topScore) ? this.state.currentScore : this.state.topScore,
         currentScore: 0,
         monuments: monuments,
         unclickedMonuments: monuments,
         message: 'You already clicked that one! Try again!'
       });
     } else {
-      const updatedMonuments = s.unclickedMonuments.filter(i => i.id !== id);
+      const updatedMonuments = this.state.unclickedMonuments.filter(i => i.id !== id);
 
       this.setState({
-        currentScore: s.currentScore + 1,
+        currentScore: this.state.currentScore + 1,
         monuments: monuments,
-        unclickedMonuments: updatedMonuments
+        unclickedMonuments: updatedMonuments,
+        message: 'Nice guess! Keep going!'
       });
     }
 
@@ -70,6 +67,8 @@ class App extends Component {
         {
           this.state.monuments.map(monument => (
             <Tile
+              key={monument.id}
+              id={monument.id}
               name={monument.name}
               image={monument.image}
               clickTile={this.clickTile}
@@ -78,7 +77,7 @@ class App extends Component {
           ))
         }
       </div>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     );
   }

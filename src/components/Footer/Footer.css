@@ -1,0 +1,16 @@
+.footer {
+  background-color: #14225A;
+  color: #FFFFFF;
+  margin-top: 60px;
+  height: 100px;
+  padding-top: 50px;
+}
+
+.github-link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.github-link:hover {
+  color: #FFFFFF;
+}
